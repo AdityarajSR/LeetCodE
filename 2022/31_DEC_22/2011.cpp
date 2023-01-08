@@ -1,0 +1,27 @@
+// Final value of variable after performing operations
+// 2011@leetcode
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int finalValueAfterOperations(vector<string>& operations) {
+        int x = 0;
+        int n = operations.size();
+        for (int i = 0; i < n; i++)
+        {
+            if(operations[i].at(1) == '+'){
+                x++;
+            }else{
+                x--;
+            }
+        }
+        return x;
+    }
+};
+
+int main(){
+    
+    return 0;
+}
