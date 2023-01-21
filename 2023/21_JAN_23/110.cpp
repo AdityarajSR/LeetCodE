@@ -23,7 +23,11 @@ private:
     }
 public:
     bool isBalanced(TreeNode* root) {
-        
+        int a = dfs(root);
+        if(a == -1){
+            return false;
+        }
+        return true;
 
     }
 };
