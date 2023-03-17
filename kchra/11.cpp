@@ -16,5 +16,6 @@ int main(){
     cout << "Multimap size before clearing: " << m1.size() << endl;
     m1.erase('d');
     cout << "Multimap size after clearing: " << m1.size();
+    
     return 0;
 }
